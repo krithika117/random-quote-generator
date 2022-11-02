@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
+@import url('https://fonts.cdnfonts.com/css/google-sans');
+
+#root,
+html,
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Product Sans', sans-serif;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./images/bg1.png');
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card {
+    background-color: rgba(129, 129, 129, 0.578);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 25px;
+    padding: 2rem;
+    box-shadow:
+        0.3em 0.3em 1em rgba(0, 0, 0, 0.674);
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.heading {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+    font-weight: 400;
+
 }
 
-.App-link {
-  color: #61dafb;
+button {
+    font-family: 'Product Sans', sans-serif;
+    border: none;
+    padding: 3%;
+    border-radius: 10px;
+    background-color: rgb(171, 171, 171);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+    background-color: rgb(160, 160, 160);
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    color: rgb(255, 255, 255);
+
 }
